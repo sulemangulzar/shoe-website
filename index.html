@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Mooli&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        barlow: "'Barlow' , sans-serif",
+                    },
+                    screens: {
+                        '2xl': '1390px',
+                        '3xl': '1500px',
+                        '4xl': '1750px',
+                        '5xl': '2200px',
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Mooli', sans-serif;
+            }
+        }
+        </style>
+</head>
+
+<body class="max-w-screen-xl mx-auto bg-gray-50">
+    <section class=" w-full h-screen 2xl:h-auto ">
+        <nav class="top-0 left-0   ">
+            <div class="h-16 w-full px-2 py-2 lg:px-4 xl:px-24">
+                <div class="flex items-center justify-between">
+                    <img class="h-16 w-16 md:h-24 md:w-24 lg:h-16 lg:w-16 object-cover object-center ml-4"
+                        src="images/nike-logo.png" alt="LOGO">
+                    <!-- lg nav  -->
+                    <span class="hidden lg:flex lg:items-center tracking-wide 2xl:pr-[px] lg:pr-12">
+                        <ul class="flex items-center gap-16 ">
+                            <li><a class="text-gray-600  font-normal text-lg" href="index.html">Men</a>
+                            </li>
+                            <li><a class="text-gray-600 font-normal font-barlow text-lg" href="#">Women</a></li>
+                            <li><a class="text-gray-600 font-normal text-lg" href="#">Popular</a></li>
+                            <li><a class="text-gray-600 font-normal text-lg" href="#">Trend</a></li>
+                        </ul>
+                    </span>
+                    <div id="nav-menu" class="hidden absolute w-full h-[330px] bg-white top-0 left-0">
+                        <ul class="flex flex-col gap-4 md:gap-6 my-16">
+                            <hr class="bg-black w-full h-1 md:mt-6">
+                            <li><a class="text-gray-600 text-2xl md:text-3xl font-Barlow font-normal px-4"
+                                    href="#">Men</a></li>
+                            <hr class="bg-black w-full h-[2px]">
+                            <li><a class="text-gray-600 text-2xl md:text-3xl font-sans-serif font-normal px-4"
+                                    href="#">Women</a>
+                            </li>
+                            <hr class="bg-black w-full h-[2px]">
+                            <li><a class="text-gray-600 text-2xl md:text-3xl font-sans-serif font-normal px-4"
+                                    href="#">Popular</a>
+                            </li>
+                            <hr class="bg-black w-full h-[2px]">
+                            <li><a class="text-gray-600 text-2xl md:text-3xl font-sans-serif font-normal px-4"
+                                    href="#">Trend</a>
+                            </li>
+                            <hr class="bg-black w-full h-[2px]">
+                        </ul>
+                        <div id="nav-close"
+                            class="absolute text-2xl cursor-pointer top-7 right-6 md:top-10 text-3xl md:right-5">
+                            <svg class="h-6 w-6 md:h-8 md:w-8  text-black fill-current"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="nav-toggle" class="text-xl cursor-pointer px-4 lg:hidden">
+                        <svg class="h-5 w-5 md:h-8 md:w-8 text-black fill-current" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22 12.999V20C22 20.5523 21.5523 21 21 21H13V12.999H22ZM11 12.999V21H3C2.44772 21 2 20.5523 2 20V12.999H11ZM11 3V10.999H2V4C2 3.44772 2.44772 3 3 3H11ZM21 3C21.5523 3 22 3.44772 22 4V10.999H13V3H21Z">
+                            </path>
+                        </svg>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mx-2 mt-20 flex items-center justify-between">
+                    <div class="w-56 md:w-96 md:mx-auto md:text-center lg:text-start lg:md:w-56 lg:mx-2 2xl:mt-24">
+                        <h3 class="text-2xl font-bold font-sans md:text-4xl  lg:text-2xl lg:tracking-wide">NIKE</h3>
+                        <h1 class="text-5xl font-bold font-sans my-2 md:text-7xl lg:text-6xl lg:tracking-wide">LUPINEK
+                            FLYKNIT
+                            ACG
+                        </h1>
+                    </div>
+
+                    <div class="flex flex-col gap-6 lg:mt-24">
+                        <svg class="w-4 h-4 md:h-5 md:w-5 cursor-pointer hover:scale-125"
+                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg>
+                        <svg class="w-4 h-4 md:h-5 md:w-5 cursor-pointer hover:scale-125"
+                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                        </svg>
+                        <svg class="w-4 h-4 md:h-5 md:w-5 cursor-pointer hover:scale-125"
+                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg>
+                    </div>
+                </div>
+                <p
+                    class="text-sm text-gray-500 ml-2 mr-8 font-sans tracking-wide md:w-[450px] md:text-center md:text-lg md:mx-[20%] lg:w-[350px] lg:text-sm lg:mx-2 lg:text-start">
+                    Designed to
+                    withstand the
+                    rigars of
+                    adverse conditions,
+                    the NIKE ACG
+                    flyknit
+                    lupinek combines
+                    flyknit, Flywire and a water-resistane Defender Repellent system in the upper</p>
+                <button
+                    class="mx-2 my-6 px-16 py-3 rounded-full text-center bg-white font-bold font-sans text-md shadow-sm md:mx-[32%] md:px-24 md:py-4 md:shadow-md md:text-lg lg:mx-2 lg:px-16 lg:py-3">BUY
+                    NOW</button>
+                <div
+                    class="h-64 w-64 bg-white rounded-full mx-auto md:h-96 md:w-96 md:my-16 lg:absolute lg:top-16 lg:right-24 xl:right-56 2xl:right-64 2xl:top-32 3xl:right-96 4xl:right-[30%] 5xl:right-[33%]">
+                    <img class="w-64 h-64 object-cover object-center md:h-96 md:w-96" src="images/nike.png" alt="SHOE">
+                </div>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
